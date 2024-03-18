@@ -14,12 +14,10 @@ export const getbyIdUser = (req,res)=>{
 }
 
 // 3. update user Router 
-
 export const updateUser = (req,res)=>{
     res.status(200).json({message: "update user Router"});
 }
 // 4. delete user Router
-
 export const deleteUser = (req,res)=>{
     res.status(200).json({message: "delete user Router"});
 }
