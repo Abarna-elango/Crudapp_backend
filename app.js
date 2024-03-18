@@ -4,6 +4,8 @@ import userRouter from "./Routes/userRouter.js";
 const app = express();
 const PORT = 2000;
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/api/user", userRouter);
 app.get("/", (req, res) => {
   res.send("server started!@");
